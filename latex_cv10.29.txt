@@ -1,0 +1,100 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{geometry} % 新增：用于调整页边距
+\geometry{top=1cm, bottom=1cm, left=1.5cm, right=1.5cm} % 重点：top=1cm 控制顶部空白，可按需微调
+\usepackage{zh_CN-Adobefonts_external}
+%\usepackage{zh_CN-Adobefonts_internal}
+\usepackage{linespacing_fix}
+\usepackage{cite}
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Weilai Wang}
+
+\basicInfo{
+  \email{weilai.ire@outlook.com} \textperiodcentered\ 
+  \phone{(+86)  15195863766} \textperiodcentered\ 
+}
+
+\basicInfo{
+  \github{https://github.com/miku-wwl}
+  \linkedin[weilai-wang]{https://www.linkedin.com/in/weilai-wang-9b34a2368}
+}
+
+\section{\faCloud\ Professional Profile}
+\begin{itemize}[parsep=0.5ex, leftmargin=*]
+  \item 4+ years of software engineering experience, focusing on high-performance distributed systems and microservice architecture. Proven expertise in Java/Spring Boot ecosystems, with hands-on experience in React and TypeScript.
+  \item Proficient in Docker and Kubernetes, familiar with CI/CD pipelines. Possess hands-on K8s cluster management experience, and are familiar with service mesh (Istio), Helm, and Kustomize.
+  \item Proficient in Kafka and Aeron (fintech messaging middleware), familiar with gRPC, Thrift, sbe and protobuf.
+  \item Familiar with AWS and Terraform stacks.
+  \item Hold CKAD and AWS-DVA certifications.
+  \item Skilled in using JVM diagnostic tools such as Arthas and jcmd, and can quickly locate distributed system failures by combining tcpdump/Wireshark and distributed tracing tools (Jaeger).
+\end{itemize}
+
+\section{\faBriefcase\ Work Experience}
+
+\datedsubsection{\textbf{Huawei Technologies Co., Ltd. - Cluster Computing Network Development Department - 11.2021 - Present}}{}
+
+\begin{onehalfspacing}
+\role{}{High-performance microservice architecture design and high-quality delivery of large-scale requirements}
+\begin{itemize}
+  \item Led a team of 5 engineers to design and implement core microservice clusters, supporting configuration and monitoring requirements for thousand-scale device access. Ensured efficient delivery of 300+ complex user stories across traffic shaping, congestion scheduling, and host security.
+  \item Built containerized microservice clusters using Spring Boot and Kubernetes, enabling automatic service scaling and load balancing.
+  \item Defined cross-service communication interface specifications via Thrift IDL (Interface Definition Language).
+\end{itemize}
+
+\end{onehalfspacing}
+
+
+\datedsubsection{\textbf{OKX (Formerly OKEX) - 7.2021 - 10.2021} }{}
+\begin{itemize}
+  \item Practiced using Aeron Archive to provide message storage and replay functions for the matching engine, supporting auditing, fault detection, and historical market data generation.
+  \item Gained a solid understanding of the Spring Cloud framework and mastered fundamental Java development skills, Maven build processes, and debugging skills for distributed microservice issues.
+\end{itemize}
+
+\section{\faGraduationCap\ Education Background}
+\datedsubsection{\textbf{University of Technology Sydney}}{07.2020 – 08.2021}
+\textit{Master's Degree: } Software Systems Engineering
+\datedsubsection{\textbf{University of Technology Sydney}}{07.2019 – 07.2020}
+\textit{Honors' Degree: } First-Class Honors in Science (Information Technology)
+\datedsubsection{\textbf{Nanjing University of Aeronautics and Astronautics}}{09.2016 – 10.2020}
+\textit{Bachelor's Degree: } Software Engineering
+ 
+
+
+\section{\faCogs\ Skills}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item Languages: Java, C\#, JavaScript, and TypeScript.
+  \item Frameworks \& Libraries: Spring Boot, Spring Cloud, React, Service Mesh (Istio).
+  \item Cloud \& Containerization: AWS, Docker, Kubernetes, Terraform, Helm, and Kustomize.
+  \item Middleware \& Development Tools: Kafka, Aeron, Disruptor, MySQL, PostgreSQL, Redis, Maven, Prometheus, Loki, and Jaeger.
+  \item English Proficiency: PTE (April 2025) – 66.
+\end{itemize}
+
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
