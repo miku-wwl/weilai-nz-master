@@ -1,0 +1,93 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{geometry} % 新增：用于调整页边距
+\geometry{top=1cm, bottom=1cm, left=1.5cm, right=1.5cm} % 重点：top=1cm 控制顶部空白，可按需微调
+\usepackage{zh_CN-Adobefonts_external}
+%\usepackage{zh_CN-Adobefonts_internal}
+\usepackage{linespacing_fix}
+\usepackage{cite}
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % 外部字体支持简体中文（./fonts/zh_CN-Adobe/）
+%\usepackage{zh_CN-Adobefonts_internal} % 系统字体支持简体中文
+\usepackage{linespacing_fix} % 取消章节间额外间距
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % 隐藏页码
+
+\name{Weilai Wang}
+
+\basicInfo{
+  \email{weilai.ire@outlook.com} \textperiodcentered\ 
+  \phone{(+86) 15195863766} \textperiodcentered\ 
+}
+
+\basicInfo{
+  \github{https://github.com/miku-wwl}
+  \linkedin[Weilai Wang]{https://www.linkedin.com/in/weilai-wang-9b34a2368}
+}
+
+\section{\faCloud\ 专业简介}
+\begin{itemize}[parsep=0.5ex, leftmargin=*]
+  \item 4年以上软件工程经验，专注于高性能分布式系统与微服务架构。精通Java/Spring Boot技术生态，具备React和TypeScript经验。
+  \item 熟练使用Docker与Kubernetes，熟悉CI/CD流水线。拥有K8s集群管理经验，了解服务网格（Istio）、Helm及Kustomize。
+  \item 熟练使用Kafka与Aeron（金融科技消息中间件），熟悉gRPC、Thrift、SBE及Protobuf。
+  \item 熟悉AWS与Terraform技术栈。
+  \item 持有CKAD与AWS-DVA认证。
+  \item 熟练使用Arthas、jcmd等JVM诊断工具，结合tcpdump/Wireshark及分布式追踪工具（Jaeger）快速定位分布式系统故障。
+\end{itemize}
+
+\section{\faBriefcase\ 工作经历}
+
+\datedsubsection{\textbf{华为技术有限公司 - 集群计算网络开发部 - 2021年12月 - 至今}}{}
+
+\begin{onehalfspacing}
+\role{}{高性能微服务架构设计及大规模需求高质量交付}
+\begin{itemize}
+  \item 带领5人工程师团队设计并实现核心微服务集群，支持千级设备接入的配置与监控需求。完成流量整形、拥塞调度、主机安全等300+复杂用户故事的高效交付。
+  \item 基于Spring Boot与Kubernetes构建容器化微服务集群，实现服务自动扩缩容与负载均衡。
+  \item 通过Thrift IDL（接口定义语言）制定跨服务通信接口规范。
+\end{itemize}
+
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{OKX（原OKEX） - 2021年7月 - 2021年10月}}{}
+\begin{itemize}
+  \item 运用Aeron Archive为撮合引擎提供消息存储与回放功能，支持审计、故障排查及历史行情数据生成。
+  \item 扎实掌握Spring Cloud框架，熟练运用Java基础开发技能、Maven构建流程及分布式微服务问题调试方法。
+\end{itemize}
+
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{悉尼科技大学}}{2020年7月 – 2021年8月}
+\textit{硕士学位：} 软件系统工程
+\datedsubsection{\textbf{悉尼科技大学}}{2019年7月 – 2020年7月}
+\textit{荣誉学士学位：} 理学（信息技术）一等荣誉
+\datedsubsection{\textbf{南京航空航天大学}}{2016年9月 – 2020年10月}
+\textit{学士学位：} 软件工程
+
+\section{\faCogs\ 技能清单}
+% 调整行间距 [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言：Java、C\#、JavaScript、TypeScript。
+  \item 框架与库：Spring Boot、Spring Cloud、React、服务网格（Istio）。
+  \item 云与容器化：AWS、Docker、Kubernetes、Terraform、Helm、Kustomize。
+  \item 中间件与开发工具：Kafka、Aeron、Disruptor、MySQL、PostgreSQL、Redis、Maven、Prometheus、Loki、Jaeger。
+  \item 英语水平：PTE（2025年4月）– 66分。
+\end{itemize}
+
+% 参考示例（注释状态）
+%\datedsubsection{\textbf{论文标题\cite{zaharia2012resilient}}}{2015年5月}
+%针对xxx优化的xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item 核心贡献
+%\end{itemize}
+
+%% 参考文献（注释状态）
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

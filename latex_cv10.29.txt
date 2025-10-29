@@ -43,7 +43,7 @@
 
 \section{\faBriefcase\ Work Experience}
 
-\datedsubsection{\textbf{Huawei Technologies Co., Ltd. - Cluster Computing Network Development Department - 11.2021 - Present}}{}
+\datedsubsection{\textbf{Huawei Technologies Co., Ltd. - Cluster Computing Network Development Department - 12.2021 - Present}}{}
 
 \begin{onehalfspacing}
 \role{}{High-performance microservice architecture design and high-quality delivery of large-scale requirements}
